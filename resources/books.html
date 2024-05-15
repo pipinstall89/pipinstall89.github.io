@@ -1,37 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CheatSheets</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    
-    #construction-image {
-      max-width: 100%;
-      height: auto;
-    }
-    
-    #caption {
-      color: white;
-      text-align: center;
-      font-size: 24px;
-      margin-top: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malware RE</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+	.resource-list {
+	    width:80%
+	}
+
+        .resource {
+            margin-bottom: 20px;
+	        text-align: center
+        }
+
+        .resource-link {
+            font-weight: bold;
+            color: #007bff;
+            text-decoration: none;
+	        margin-left: -20px;
+	        display: inline-block;
+
+        }
+
+        .resource-link:hover {
+            text-decoration: underline;
+        }
+
+        .description {
+            margin-left: 20px;
+        }
+
+        img {
+            max-width: 40%;
+	        max-height: 40%;
+	        display: block;
+	        margin: 0, auto;
+        }
+    </style>
 </head>
 <body>
-  <div>
-    <img id="construction-image" src="steve.png" alt="Under Construction">
-    <div id="caption">Under Construction</div>
-  </div>
+    <img src="apple.jpg" alt="Apple Logo">
+    <h1>Malware RE</h1>
+    
+    <div class="resource">
+        <a href="https://taomm.org/vol1/read.html" class="resource-link">The Art of Mac Malware by Patrick Wardle</a>
+        <p class="description"></p>
+    </div>
+    
+    <div class="resource">
+        <a href="https://www.amazon.com/Blue-Fox-Assembly-Internals-Analysis/dp/1119745306/ref=sr_1_1?crid=3LACR259XC8JQ&dib=eyJ2IjoiMSJ9.R4GY5bt5gjd6OdbT8pPaPJiPNoF6MISNxPF9fKHq3papGm-i-TjQjW8GcD34K9CIIN4UfEtzuBPmvsdafIN5rzvc1IRbLpFWmmK9rLWWbBIk4RgjGR5bHfpk3XW49CWhAqW2xkHpQSB58LWcAlnxqjNEQzEjNLUURd3f9HaRl8wf4okVHk_Wuxg1IjtkiBuG3gPV0zV11bNjFOO-qxc008aaadWmkyOr21JMRHLvtaE.xilbV2cMSu0dz_XgehYoMiUeBlOy36OMO-DrmdTY3qQ&dib_tag=se&keywords=arm+assembly+internals+and+reverse+engineering&qid=1715738161&sprefix=ARM+Asse%2Caps%2C134&sr=8-1" class="resource-link">ARM Assembly. Internals & Reverse Engineering by Maria Markstedter</a>
+        <p class="description">AppleJeus malware writeup. Covers topics such as .pkg files, basic analysis, and detailed analysis</p>
+    </div>
+    
+    <!-- Add more resources as needed -->
+
 </body>
 </html>
